@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset='UTF-8'>
+        <title>Tabelas em HTML</title>
+    </head>
+    <body>
+        <header style="background-color: #AAC1FF;">
+            <br>
+            <h1 style="text-align: center;">Tabelas</h1>
+            <br>
+        </header>
+        <main>
+            <h2>Tabela de Notas de um aluno</h2>
+            <table border="1" style="width: 100%;">
+                <thead style="background-color: purple; color: whitesmoke;"> <!-- cabeçalho -->
+                    <tr> <!-- linha do cabeçalho (table row) -->
+                        <th>Disciplina</th> <!-- conteúdo do cabeçalho (table head) -->
+                        <th>Nota 1</th>
+                        <th>Nota 2</th>
+                        <th>Nota 3</th>
+                        <th>Nota 4</th>
+                        <th>Média</th>
+                    </tr>
+                </thead>
+                <tbody> <!-- corpo -->
+                    <tr> <!-- segunda linha -->
+                        <td>Matemática</td> <!-- dados da tabela -->
+                        <td>9</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>10</td>
+                        <td>8,5</td>
+                    </tr>
+                    <tr> <!-- terceira linha -->
+                        <td>Linguagem de Marcação</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>4</td>
+                    </tr>
+                    <tr> <!-- quarta linha -->
+                        <td>Banco de Dados</td>
+                        <td>9</td>
+                        <td>9</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>9,25</td>
+                    </tr>
+                    <tr> <!-- quinta linha -->
+                        <td>Programação Back-End 1</td>
+                        <td>8</td>
+                        <td>8</td>
+                        <td>7</td>
+                        <td>7</td>
+                        <td>7,5</td>
+                    </tr>
+                    <tr> <!-- sexta linha -->
+                        <td>Programação Mobile</td>
+                        <td style="text-align: center;" rowspan="2">-</td>
+                        <td style="text-align: center;" rowspan="2">-</td>
+                        <td>9</td>
+                        <td>9</td>
+                        <td>9</td>
+                    </tr>
+                    <tr> <!-- sétima linha -->
+                        <td>Programação Front-End</td>
+                        <!-- <td>-</td> -->
+                        <!-- <td>-</td> -->
+                        <td>10</td>
+                        <td>10</td>
+                        <td>10</td>
+                    </tr>
+                    <tr> <!-- linha de média final -->
+                        <th colspan="5">Média Final</th> <!-- mesclar colunas; linhas = 'rowspan' -->
+                        <th>7,3</th>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </body>
+</html>
